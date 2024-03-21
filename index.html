@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ml5@0.7.0/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h3 id="sara">
+            CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET
+        </h3>
+        <hr>
+
+        <span id="textPlaceholder"></span>
+        <span id="imageIdentificationResult"></span>
+        <span id="accuracyConclusion"></span>
+
+        <div id="overallConclusion">
+            <h2>Overall Conclusion</h2>
+            <p>Total number of images used: <span id="imageCount"></span></p>
+            <p>After thorough analysis, it is concluded that <span id="mostAccurateMethod"></span> is the most accurate
+                method for image identification.</p>
+        </div>
+    </center>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12 heading1">
+                <b>Test Image - </b>
+                <img src="book.jpg" class="img-responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12 heading2">
+                Output on <b>GOOGLE LENS</b> -
+                <span></span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12 heading3">
+                Output on <b>Mobilenet Model</b> -
+                <span></span>
+            </h5>
+            <div class="mini_result" class="col-sm-4 col-xs-12">
+                <h4 id="sara1">Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+    </ol>
+    <footer>
+        <p>Developed by Sara</p>
+    </footer>
+</body>
+
+</html>
